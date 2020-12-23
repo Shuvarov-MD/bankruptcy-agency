@@ -108,3 +108,43 @@ table {
   font-weight: bold;
   font-display: swap;
 }
+
+/* General styles */
+:root {
+  --font-title: 'Chift Display', sans-serif;
+  --font-text: 'Playfair Display', sans-serif;
+  --font-additional: Gilroy, serif;
+  --color-accent: #f5f5f5;
+  --color-dark: #000000;
+  --color-light: #ffffff;
+  --color-second: #3a5896;
+  --color-active: #ff0c0a;
+  --button-bg: linear-gradient(-65deg, #ff0909 0%, #ff4115 41%, #ff6a47 43%, #ff0909 99%, #ff0909 100%);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 96%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
