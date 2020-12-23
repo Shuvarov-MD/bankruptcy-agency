@@ -51,3 +51,60 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Connecting fonts */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay/Bold/PlayfairDisplay-Bold.woff') format('woff'), url('../fonts/PlayfairDisplay/Bold/PlayfairDisplay-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay/Bold/PlayfairDisplay-BoldItalic.woff') format('woff'), url('../fonts/PlayfairDisplay/Bold/PlayfairDisplay-BoldItalic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay/Bold/PlayfairDisplay-Italic.woff') format('woff'), url('../fonts/PlayfairDisplay/Bold/PlayfairDisplay-Italic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url('../fonts/Gilroy/Light/Gilroy-Light.woff') format('woff'), url('../fonts/Gilroy/Light/Gilroy-Light.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url('../fonts/Gilroy/Regular/Gilroy-Regular.woff') format('woff'), url('../fonts/Gilroy/Regular/Gilroy-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url('../fonts/Gilroy/Medium/Gilroy-Medium.woff') format('woff'), url('../fonts/Gilroy/Medium/Gilroy-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chift Display';
+  src: url('../fonts/ChiftDisplay/Bold/ChiftDisplay-Bold.woff') format('woff'), url('../fonts/ChiftDisplay/Bold/ChiftDisplay-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
