@@ -301,6 +301,15 @@ body {
   display: flex;
 }
 
+.slider__subtitle {
+  font-family: var(--font-text);
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: 1.04;
+}
+
 .pagination__item {
   width: 0.625rem;
   height: 0.625rem;
@@ -477,6 +486,7 @@ body {
   font-size: 1.875rem;
   font-weight: 700;
   font-style: italic;
+  line-height: 1.43;
 }
 
 .description--center {
@@ -999,5 +1009,184 @@ body {
 
   .convenience__box:not(:last-of-type) {
     margin-bottom: 2.5rem;
+  }
+}
+
+/* Bankruptcy styles */
+.bankruptcy__title {
+  margin-bottom: 0.75em;
+}
+
+.bankruptcy__description {
+  max-width: 17.666em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+}
+
+.bankruptcy__paginations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 47.812rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+
+.bankruptcy__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.bankruptcy__pagination:first-of-type,
+.bankruptcy__pagination:nth-of-type(2),
+.bankruptcy__pagination:nth-of-type(3),
+.bankruptcy__pagination:nth-of-type(4) {
+  margin-bottom: 3.75rem;
+}
+
+.bankruptcy__wrap {
+  position: relative;
+  width: 5.938rem;
+  height: 5.938rem;
+  background-color: var(--color-second);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+}
+
+.bankruptcy__wrap--active {
+  background-color: var(--color-active);
+}
+
+.bankruptcy__img {
+  position: absolute;
+  object-fit: contain;
+}
+
+.bankruptcy__pagination:first-of-type .bankruptcy__img {
+  top: -0.75rem;
+  left: -0.625rem;
+  width: 6.125rem;
+  height: 7.063rem;
+}
+
+.bankruptcy__pagination:nth-of-type(2) .bankruptcy__img {
+  top: -0.187rem;
+  left: -0.062rem;
+  width: 5.625rem;
+  height: 5.75rem;
+}
+
+.bankruptcy__pagination:nth-of-type(3) .bankruptcy__img {
+  top: -0.125rem;
+  left: -1.187rem;
+  width: 6.75rem;
+  height: 6.438rem;
+}
+
+.bankruptcy__pagination:nth-of-type(4) .bankruptcy__img {
+  top: -0.062rem;
+  width: 5.563rem;
+  height: 6.375rem;
+}
+
+.bankruptcy__pagination:nth-of-type(5) .bankruptcy__img {
+  top: 0.312rem;
+  left: -0.9375rem;
+  width: 6.5rem;
+  height: 6.063rem;
+}
+
+.bankruptcy__pagination:nth-of-type(6) .bankruptcy__img {
+  top: 0.625rem;
+  left: -0.125rem;
+  width: 5.125rem;
+  height: 5.438rem;
+}
+
+.bankruptcy__pagination:nth-of-type(7) .bankruptcy__img {
+  top: 1.5rem;
+  left: -1.187rem;
+  width: 7.25rem;
+  height: 4.813rem;
+}
+
+.bankruptcy__pagination:nth-of-type(8) .bankruptcy__img {
+  top: 0.187rem;
+  left: 0.5rem;
+  width: 5.375rem;
+  height: 5.938rem;
+}
+
+.bankruptcy__slide {
+  min-width: 100%;
+}
+
+.bankruptcy__subtitle {
+  margin-bottom: 1.785em;
+  text-align: center;
+  line-height: 1.04;
+}
+
+.bankruptcy__text {
+  max-width: 38.25em;
+  width: 67%;
+  font-family: var(--font-additional);
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.bankruptcy__arrow {
+  transform: translateY(-50%);
+}
+
+.bankruptcy__icon {
+  width: 1.313rem;
+  height: 2.5rem;
+  fill: var(--color-dark);
+  opacity: 0.2;
+  transition: all 0.3s linear;
+}
+
+.bankruptcy__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4.285em;
+  padding: 1.785em 3.214em;
+  border-radius: 2.063rem;
+}
+
+@media screen and (min-width: 992px) {
+  .bankruptcy__wrap:hover {
+    background-color: var(--color-active);
+  }
+
+  .bankruptcy__arrow:hover .bankruptcy__icon {
+    fill: var(--color-dark);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .bankruptcy__paginations {
+    justify-content: center;
+  }
+
+  .bankruptcy__pagination:nth-of-type(5),
+  .bankruptcy__pagination:nth-of-type(6) {
+    margin-bottom: 3.75rem;
+  }
+
+  .bankruptcy__pagination {
+    width: 33%;
   }
 }
