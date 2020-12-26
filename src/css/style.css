@@ -920,7 +920,7 @@ body {
 @media screen and (min-width: 992px) {
   .cost__container::after {
     position: absolute;
-    bottom: -6.25rem;
+    bottom: -6.42rem;
     right: -12.187rem;
     content: url('../images/cost/femida.png');
   }
@@ -993,8 +993,8 @@ body {
   .convenience > .container::before {
     position: absolute;
     content: url('../images/convenience/book.png');
-    bottom: -475px;
-    left: -400px;
+    bottom: -29.687rem;
+    left: -25rem;
   }
 }
 
