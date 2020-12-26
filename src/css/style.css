@@ -938,6 +938,10 @@ body {
   background-color: var(--color-accent);
 }
 
+.convenience > .container {
+  position: relative;
+}
+
 .convenience__title {
   margin-bottom: 2.5em;
 }
@@ -976,12 +980,22 @@ body {
 }
 
 .convenience__text {
+  position: relative;
   color: #666666;
   font-family: var(--font-additional);
   font-size: 0.875rem;
   font-weight: 300;
   font-style: normal;
   line-height: 1.43;
+}
+
+@media screen and (min-width: 992px) {
+  .convenience > .container::before {
+    position: absolute;
+    content: url('../images/convenience/book.png');
+    bottom: -475px;
+    left: -400px;
+  }
 }
 
 @media screen and (max-width: 991px) {
