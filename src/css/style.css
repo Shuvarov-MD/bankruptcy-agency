@@ -129,20 +129,23 @@ table {
 html {
   height: 100%;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   color: var(--color-dark);
   background-color: var(--color-light);
 }
 
 .wrapper {
-  position: relative;
   flex: 1 0 auto;
+}
+
+.outer-wrapper {
+  position: relative;
   overflow-x: hidden;
+  min-height: 100%;
 }
 
 .container {
@@ -1310,7 +1313,7 @@ body {
 @media screen and (min-width: 992px) {
   .warranty__container::after {
     position: absolute;
-    bottom: -6.25rem;
+    bottom: -6.437rem;
     right: -6.562rem;
     content: url('../images/warranty/hammer.png');
   }
@@ -1319,6 +1322,98 @@ body {
 @media screen and (max-width: 575px) {
   .warranty__button {
     margin-left: 0;
+    margin-top: 1.071em;
+  }
+}
+
+/* Contacts styles */
+.contacts {
+  position: relative;
+  padding-bottom: 8.125rem;
+  background: url('../images/contacts/map.jpg') center / cover no-repeat;
+}
+
+.contacts__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 38.438rem;
+  padding: 5rem 5rem 11.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: url('../images/contacts/contacts-bg.png') top center / contain no-repeat;
+}
+
+.contacts__description {
+  max-width: 11.363em;
+  margin-bottom: 1.818em;
+  color: var(--color-second);
+  font-family: var(--font-text);
+  font-size: 1.375rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.contacts__address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__city {
+  font-family: var(--font-additional);
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 1.375em;
+  text-align: center;
+}
+
+.contacts__tel {
+  color: var(--color-dark);
+  font-family: var(--font-additional);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.contacts__form {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50.625rem;
+  width: 100%;
+  padding: 3.125rem;
+  background-color: var(--color-light);
+  box-shadow: 0 1.063rem 3.375rem rgba(0, 0, 0, 0.06);
+}
+
+.contacts__wrap {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.contacts__subtitle {
+  font-family: var(--font-text);
+  max-width: 11.875em;
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 575px) {
+  .contacts__subtitle {
+    margin-bottom: 0.937em;
+  }
+
+  .contacts__button {
     margin-top: 1.071em;
   }
 }
@@ -1366,6 +1461,10 @@ body {
 }
 
 @media screen and (max-width: 575px) {
+  .footer {
+    padding-top: 12.125rem;
+  }
+
   .footer__container {
     flex-direction: column;
   }
