@@ -1534,6 +1534,18 @@ body {
   outline: 0.5rem solid var(--color-second);
 }
 
+.popup__content--successes {
+  transform: translate(-50%, -75%);
+  padding: 2.125rem;
+  outline: 0.5rem solid var(--color-second);
+}
+
+.popup__img {
+  width: 21.833rem;
+  height: 29.166rem;
+  object-fit: cover;
+}
+
 .popup__content--active {
   opacity: 1;
   visibility: visible;
