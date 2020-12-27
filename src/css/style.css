@@ -1377,6 +1377,7 @@ body {
   font-weight: 500;
   font-style: normal;
   text-decoration: none;
+  transition: color 0.3s linear;
 }
 
 .contacts__form {
@@ -1406,6 +1407,12 @@ body {
   max-width: 11.875em;
   margin-top: 0;
   line-height: 1.5;
+}
+
+@media screen and (min-width: 992px) {
+  .contacts__tel:hover {
+    color: var(--color-second);
+  }
 }
 
 @media screen and (max-width: 575px) {
