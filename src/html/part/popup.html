@@ -8,8 +8,8 @@
       <p class="form__text">Мы перезвоним в течение 5 минут</p>
       <div class="form__personal-data">
         <input type="checkbox" name="form-popup--checkbox" id="popup-checkbox" class="form__checkbox">
-        <label for="popup-checkbox" class="personal-data form__label">Согласен с 
-          <a href="#" class="personal-data__link">обработкой персональных данных</a>
+        <label for="popup-checkbox" class="form__label">Согласен с 
+          <a href="#" class="personal-data personal-data__link">обработкой персональных данных</a>
         </label>
       </div>
     </form>
@@ -98,6 +98,13 @@
         </ol>
       </li>
     </ol>
+    <button class="popup__close">
+      <svg class="icon popup__icon">
+        <use xlink:href="./images/sprites.svg#cancel"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="popup__content popup__content--successes">
     <button class="popup__close">
       <svg class="icon popup__icon">
         <use xlink:href="./images/sprites.svg#cancel"></use>
