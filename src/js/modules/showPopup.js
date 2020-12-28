@@ -10,11 +10,11 @@ document.body.addEventListener('click', (event) => {
   const { target } = event;
   const popupContent = document.querySelector('.popup__content');
 
-  event.preventDefault();
-
   if (target.closest('.callback')) {
     showPopup('callback');
   } else if (target.closest('.personal-data')) {
+    event.preventDefault();
+
     if (popupContent.classList.contains('popup__content--active')) closePopup();
 
     showPopup('personal-data');
