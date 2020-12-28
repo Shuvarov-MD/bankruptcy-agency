@@ -216,6 +216,7 @@ body {
   display: none;
   width: 3.166rem;
   height: 2.5rem;
+  z-index: 10;
 }
 
 .hamburger__span {
@@ -265,13 +266,19 @@ body {
 
 .slider__wrapper {
   display: flex;
+  transition: all 0.3s linear;
 }
 
 .slider__slide {
-  display: flex;
+  display: none;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.slider__slide--active {
+  display: flex;
 }
 
 .slider__arrow {
@@ -324,10 +331,6 @@ body {
 
 .pagination__item:not(:last-of-type) {
   margin-right: 0.625rem;
-}
-
-.pagination__item--active {
-  background-color: var(--color-second);
 }
 
 .section {
@@ -595,7 +598,7 @@ body {
 
 @media screen and (max-width: 575px) {
   .header__content {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 50%;
@@ -606,6 +609,7 @@ body {
     justify-content: center;
     background-color: var(--color-second);
     transform: translateX(100%);
+    z-index: 10;
     opacity: 0;
     transition: all 0.3s linear;
   }
@@ -687,9 +691,12 @@ body {
 }
 
 .hero__slide {
-  min-width: 46.875rem;
   padding-top: 6.5rem;
   padding-bottom: 6.5rem;
+}
+
+.hero__pagination--active {
+  background-color: var(--color-second);
 }
 
 .hero__text {
@@ -1076,7 +1083,7 @@ body {
   transition: background-color 0.3s linear;
 }
 
-.bankruptcy__wrap--active {
+.bankruptcy__pagination--active .bankruptcy__wrap{
   background-color: var(--color-active);
 }
 
