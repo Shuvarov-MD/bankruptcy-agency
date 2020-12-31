@@ -1151,6 +1151,8 @@ body {
 
 .bankruptcy__slide {
   min-width: 100%;
+  min-height: 10.312rem;
+  justify-content: start;
 }
 
 .bankruptcy__subtitle {
